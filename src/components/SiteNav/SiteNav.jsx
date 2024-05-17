@@ -5,10 +5,13 @@ export default function SiteNav() {
     const navLinks = [
         { label: "Home", url: "/" },
         { label: "Dad Jokes", url: "/dadjokes" },
+        { label: "Tic Tac Toe", url: "/tictactoe"},
     ];
     return (
-        <div>
+        <div className={styles.wrapper}>
             {navLinks.map((navLink) => (
+                // eslint-disable-next-line react/jsx-key
+                <div className={styles.navItem}>
                 <NavLink
                     key={navLink.url}
                     to={navLink.url}
@@ -18,6 +21,7 @@ export default function SiteNav() {
                 >
                     {navLink.label}
                 </NavLink>
+                </div>
             ))}
         </div>
     );

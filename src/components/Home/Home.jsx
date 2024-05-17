@@ -1,6 +1,6 @@
 
 export default function Home(){
     return(
-        <div>I AM THE HOME PAGE</div>
+        <div>Welcome to my React Redux example page!</div>
     )
 }

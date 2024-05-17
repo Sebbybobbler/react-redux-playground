@@ -1,0 +1,9 @@
+.mainWrapper{
+    display: flex;
+    align-items:stretch;
+    justify-content: center;
+    width: 100%;
+    flex: 1;
+    background-color: #9A94BC;
+    align-items: center;
+}

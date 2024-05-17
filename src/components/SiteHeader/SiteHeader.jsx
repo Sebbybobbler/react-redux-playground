@@ -4,8 +4,10 @@ import styles from "./SiteHeader.module.css"
 export default function SiteHeader(){
     return(
         <div className={styles.wrapper}>
-            <h1>This is the header</h1>
+            <h1>React-Redux</h1>
+            <div className={styles.navbar}>
             <SiteNav/>
+            </div>
         </div>
     )
 }
