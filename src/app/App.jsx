@@ -1,6 +1,6 @@
 //import { useState } from 'react'
 import './App.css'
-import DadJokes from "../features/dadjokes/DadJokes";
+import DadJokes from "../components/DadJokes/DadJokes";
 
 function App() {
   //const [joke, setJoke] = useState("")
