@@ -1,0 +1,6 @@
+.footerWrapper{
+    background-color: #6A605C;
+    height:10%;
+    display: flex;
+    align-content: left;
+}

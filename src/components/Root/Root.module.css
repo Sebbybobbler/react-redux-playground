@@ -1,0 +1,12 @@
+.rootWrapper{
+    min-height:100%;
+    min-width:100%;
+    display: flex;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    min-width: 100%;
+}

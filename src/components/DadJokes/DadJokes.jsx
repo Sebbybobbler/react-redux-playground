@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { selectDadJoke, getDadJoke } from "./dadjokesslice";
 import { useEffect } from "react";
-
+import styles from "./DadJokes.module.css";
 
 export default function DadJokes() {
     const dadJoke = useSelector(selectDadJoke);
@@ -9,14 +9,29 @@ export default function DadJokes() {
     useEffect(() => {
         dispatch(getDadJoke());
     }, [dispatch]);
+
     function handleClick(){
         dispatch(getDadJoke());
     }
-    console.log(dadJoke);
+    if(!dadJoke){
+        return(
+            <div className={styles.dadJokeWrapper}>
+                <p>Loading...</p>
+            </div>
+        )
+    }
+    if(dadJoke.error){
+        return(
+            <div className={styles.dadJokeWrapper}>
+                <p>Loading...</p>
+            </div>
+        )
+    }
     return (
-        <>
-            <p>{dadJoke}</p>
+        <>  <div className={styles.dadJokeWrapper}>
+             <p>{dadJoke}</p>
             <button onClick={handleClick}>Click me for a new joke!</button>
+            </div>
         </>
     );
 }

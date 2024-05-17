@@ -1,9 +1,9 @@
-
+import styles from "./SiteFooter.module.css"
 
 export default function siteFooter(){
     return(
-        <div>
-            I am the footer
+        <div className={styles.footerWrapper}>
+           <p>Seb Davies 2024</p>
         </div>
     )
 }
